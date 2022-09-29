@@ -1,0 +1,35 @@
+.TH TOMLL 1 "31 May 2017" "1.0.0"
+.SH NAME
+tomll \- reads TOML files and lint them
+.SH SYNOPSIS
+.B tomll
+.SH DESCRIPTION
+This manual page documents briefly the
+.B tomll
+command.
+.PP
+.B tomll
+is a program that reads TOML files and lint them.
+.B tomll
+can be used in two ways.
+.IP
+Writing to STDOUT and reading from STDIN:
+  cat file.toml | tomll > file.toml
+.IP
+Reading and updating a list of files:
+  tomll a.toml b.toml c.toml
+.PP
+When given a list of files,
+.B tomll
+will modify all files in place without asking.
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.SH SEE ALSO
+.BR tomljson (1).
+.SH AUTHOR
+This manpage was written by Dr. Tobias Quathamer <toddy@debian.org>.

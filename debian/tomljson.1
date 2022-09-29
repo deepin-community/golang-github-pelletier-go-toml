@@ -1,0 +1,31 @@
+.TH TOMLJSON 1 "31 May 2017" "1.0.0"
+.SH NAME
+tomljson \- reads a TOML file and outputs its JSON representation
+.SH SYNOPSIS
+.B tomljson
+.SH DESCRIPTION
+This manual page documents briefly the
+.B tomljson
+command.
+.PP
+.B tomljson
+is a program that reads a TOML file and outputs its JSON representation.
+.B tomljson
+can be used in two ways.
+.IP
+Writing to STDOUT and reading from STDIN:
+  cat file.toml | tomljson > file.json
+.IP
+Reading from a file name:
+  tomljson file.toml
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.SH SEE ALSO
+.BR tomll (1).
+.SH AUTHOR
+This manpage was written by Dr. Tobias Quathamer <toddy@debian.org>.

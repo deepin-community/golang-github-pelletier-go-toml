@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+# Include test fixtures
+export DH_GOLANG_INSTALL_EXTRA := $(wildcard *.toml)
+
+# Exclude toml_testgen_test.go generation tool
+export DH_GOLANG_EXCLUDES := cmd/tomltestgen
+
+%:
+	dh $@ --buildsystem=golang --with=golang
