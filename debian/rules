@@ -7,4 +7,4 @@ export DH_GOLANG_INSTALL_EXTRA := $(wildcard *.toml)
 export DH_GOLANG_EXCLUDES := cmd/tomltestgen
 
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --buildsystem=golang
