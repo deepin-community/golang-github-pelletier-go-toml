@@ -1,3 +1,13 @@
+golang-github-pelletier-go-toml (1.9.5-1) unstable; urgency=medium
+
+  * New upstream version 1.9.5
+  * Tweak debian/watch to "see" v1.9.5 on the second page
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Drop -dev package’s unneeded dependency on ${shlibs:Depends}
+  * Add Static-Built-Using field in debian/control
+
+ -- Anthony Fok <foka@debian.org>  Tue, 11 Jul 2023 00:57:13 -0600
+
 golang-github-pelletier-go-toml (1.9.4-1) unstable; urgency=medium
 
   * New upstream version 1.9.4
